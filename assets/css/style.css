@@ -69,7 +69,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #243d5d;
+  background: #2f4765;
   border: 1px solid black;
   /* overflow-y: auto; */
 }
@@ -241,30 +241,24 @@ h6 {
 
 #hero h1 {
   margin: 50px 0 10px 0;
-  font-size: 60px;
-  font-weight: 800;
+  font-size: 64px;
+  font-weight: 700;
   line-height: 56px;
   color: black;
-  font-family: "Arima", cursive;
-  font-family: "BIZ UDGothic", sans-serif;
-  font-family: "Josefin Sans", sans-serif;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
 }
 
 #hero p {
-  color: BLACK;
+  color: black;
   margin-bottom: 50px;
   font-size: 26px;
-  font-weight: bold;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-  color: #fff;
+  color: crimson;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #0073aa;
+  border-bottom: 3px solid crimson;
 }
 
 @media (min-width: 1024px) {
@@ -508,7 +502,6 @@ section {
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .portfolio #portfolio-flters {
@@ -1097,8 +1090,4 @@ button.show-all:hover {
   font-family: "PT Sans Narrow", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
   /* font-size: 30px; */
-}
-.portfolio-container {
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-  /* object-fit: contain; */
 }

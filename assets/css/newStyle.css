@@ -23,25 +23,25 @@ a {
     text-decoration: none;
 }
 
-#particlesHeaders {
+/* #particlesHeaders {
     padding: 1em;
     clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
     background: var(--bg-nav);
     margin-bottom: 1em;
     padding-bottom: 3.5em;
     text-align: center;
-}
+} */
 
-main {
+/* main {
     min-height: 70px;
     padding: 2rem;
-}
+} */
 
-img {
+/* img {
     margin: 2em 0 0;
     width: 180px;
     height: 180px;
-}
+} */
 
 /* Navbar */
 

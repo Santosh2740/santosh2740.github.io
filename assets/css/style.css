@@ -608,21 +608,29 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.portfolio-wrap{
+  padding: 1px;
+  width: auto;
+  cursor: pointer;
+  
 }
 .portfolio-wrap > img {
   width: 100%;
   height: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-/* .portfolio-wrap img {
+.portfolio-wrap img {
   color:#fff;
   /* border: 1px solid black; */
-/* padding: 5px; */
-/* background-color: #ccc; */
+padding: 5px;
+background-color: #ccc;
 
-/* }  */
+ } 
 .portfolio .portfolio-wrap::before {
-  content: "";
+  
+  visibility: collapse;
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
   left: 0;
@@ -633,6 +641,7 @@ section {
   z-index: 2;
   opacity: 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* content: "hvjhjhvhvjvj"; */
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -645,6 +654,8 @@ section {
   transition: all ease-in-out 0.3s;
   display: flex;
   justify-content: center;
+  /* display: block; */
+  
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
@@ -655,15 +666,57 @@ section {
   transition: 0.3s;
   width: 50%;
 }
+.cont-details{
+  padding:3px; 
+  /* display: none; */
+}
+.cont-details > p +h2{
+  color: #0073aa;
+  font-size: 20px;
+  font-weight: bolder;
+}
 
+.cont-details > p + h2 + h4{
+  font-size: 18px;
+  font-family: 'Poor Story', cursive;
+  font-weight: 549.9;
+}
+.cont-details > p + h2 + h4:hover{
+  color: crimson;
+  cursor: pointer;
+}
+.cont-details >p +h2 + h4+ li{
+  font-size: 16px;
+  font-family: 'Poor Story', cursive;
+}
+.cont-details >p +h2 + h4+ li+li{
+  font-size: 15px;
+  font-family: 'Poor Story', cursive;
+}
+.cont-details >p +h2 + h4+ li+li > span:hover{
+  font-weight: bolder;
+  color: crimson;
+}
+.cont-details >p +h2 + h4+ li+li+li{
+  font-size: 16px;
+  font-family: 'Poor Story', cursive;
+}
+
+.portfolio-wrap:hover+.cont-details{
+  
+  /* display: block; */
+
+}
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   background: #b073fa;
   box-shadow: #b073fa 0px 3px 8px;
+  /* display: block; */
 }
 
 .portfolio .portfolio-wrap .portfolio-links a + a {
   border-left: 1px solid #bb86fc;
+  /* display: block; */
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -672,11 +725,13 @@ section {
   right: 0;
   bottom: 0;
   opacity: 1;
+  /* display: block; */
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
+  /* display: block; */
 }
 
 /*--------------------------------------------------------------

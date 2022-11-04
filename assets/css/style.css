@@ -670,34 +670,43 @@ background-color: #ccc;
   padding:3px; 
   /* display: none; */
 }
-.cont-details > p +h2{
+#cont-details2{
+  display: flex;
+  justify-content: space-between;
+}
+#cont-details2 >h2 {
   color: #0073aa;
   font-size: 20px;
   font-weight: bolder;
 }
-
-.cont-details > p + h2 + h4{
+.fa-github,.fa-up-right-from-square{
+  font-size: 18px;
+}
+.cont-details > p + div + h4 {
+  /* color: red; */
   font-size: 18px;
   font-family: 'Poor Story', cursive;
   font-weight: 549.9;
 }
-.cont-details > p + h2 + h4:hover{
+.cont-details > p + div + h4:hover{
   color: crimson;
   cursor: pointer;
 }
-.cont-details >p +h2 + h4+ li{
+.cont-details > p + div + h4+ li{
   font-size: 16px;
   font-family: 'Poor Story', cursive;
 }
-.cont-details >p +h2 + h4+ li+li{
+.cont-details > p + div + h4+ li+li{
   font-size: 15px;
+  font-weight: 550;
+  /* color: red; */
   font-family: 'Poor Story', cursive;
 }
-.cont-details >p +h2 + h4+ li+li > span:hover{
+.cont-details > p + div + h4+ li+li > span:hover{
   font-weight: bolder;
   color: crimson;
 }
-.cont-details >p +h2 + h4+ li+li+li{
+.cont-details > p + div + h4+ li+li+li{
   font-size: 16px;
   font-family: 'Poor Story', cursive;
 }
@@ -746,12 +755,12 @@ background-color: #ccc;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 54px;
-  height: 54px;
-  background: #0073aa;
+  width: 64px;
+  height: 64px;
+  background: #d6eaf8;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #0073aa;
+  border: 1px solid #d6eaf8;
 }
 
 .services .icon i {
@@ -764,7 +773,7 @@ background-color: #ccc;
 }
 
 .services .icon-box:hover .icon i {
-  color: #0073aa;
+  color: #8bd1f2;
 }
 
 .services .title {
@@ -1219,7 +1228,7 @@ button.show-all:hover {
   right: auto;
 }
 .responsive{
-  padding: 1%;
-  width: 100%;
-  height: auto;
+  padding: 2%;
+  width: 99%;
+  height: 330px;
 }

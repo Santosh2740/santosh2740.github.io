@@ -769,7 +769,7 @@ background-color: #ccc;
   border: 1px solid #d6eaf8;
 }
 .icon>img{
-  height: 64px;
+  height: auto;
   width: 64px;
 }
 

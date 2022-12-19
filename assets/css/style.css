@@ -5,6 +5,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&family=BIZ+UDGothic:wght@700&family=Josefin+Sans:ital@1&family=PT+Sans+Narrow:wght@700&family=Source+Sans+Pro:wght@600&display=swap");
 
+*{
+  /* background-color:#F4F4F3; */
+}
 /* -----------------------------------------------------------
 #  ScrollBar
 -------------------------------------------------------------- */
@@ -37,6 +40,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-display: swap;
+  
   color: #272829;
   overflow-y: visible;
   scrollbar-color: #ca9eff #f1f1f1;
@@ -339,7 +343,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 10px 0;
   overflow: hidden;
 }
 
@@ -354,7 +358,7 @@ section {
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   padding-bottom: 20px;
   position: relative;
   color: #173b6c;
@@ -560,8 +564,13 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+#portfolio{
+  /* background-color: #C3A9FF; */
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  
 }
 
 .portfolio #portfolio-flters {
@@ -683,10 +692,9 @@ background-color: #ccc;
   font-size: 18px;
 }
 .cont-details > p + div + h4 {
-  /* color: red; */
   font-size: 18px;
-  font-family: 'Poor Story', cursive;
-  font-weight: 549.9;
+  font-weight: 300;
+  font-family: "Lexend Deca", sans-serif;
 }
 .cont-details > p + div + h4:hover{
   color: crimson;
@@ -694,13 +702,10 @@ background-color: #ccc;
 }
 .cont-details > p + div + h4+ li{
   font-size: 16px;
-  font-family: 'Poor Story', cursive;
 }
 .cont-details > p + div + h4+ li+li{
   font-size: 15px;
   font-weight: 550;
-  /* color: red; */
-  font-family: 'Poor Story', cursive;
 }
 .cont-details > p + div + h4+ li+li > span:hover{
   font-weight: bolder;
@@ -708,7 +713,6 @@ background-color: #ccc;
 }
 .cont-details > p + div + h4+ li+li+li{
   font-size: 16px;
-  font-family: 'Poor Story', cursive;
 }
 
 .portfolio-wrap:hover+.cont-details{
@@ -748,6 +752,8 @@ background-color: #ccc;
 --------------------------------------------------------------*/
 .services .icon-box {
   margin-bottom: 20px;
+  /* border: 1px solid red; */
+  /* gap: 20px; */
 }
 
 .services .icon {
@@ -755,17 +761,21 @@ background-color: #ccc;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
+  width: 94px;
+  height: 74px;
   background: #d6eaf8;
-  border-radius: 50%;
+  /* border-radius: 30%; */
   transition: 0.5s;
   border: 1px solid #d6eaf8;
+}
+.icon>img{
+  height: 64px;
+  width: 64px;
 }
 
 .services .icon i {
   color: #fff;
-  font-size: 24px;
+  font-size: 204px;
 }
 
 .services .icon-box:hover .icon {
@@ -777,9 +787,10 @@ background-color: #ccc;
 }
 
 .services .title {
-  margin-left: 80px;
+  margin-left: 100px;
   font-weight: 700;
-  margin-bottom: 15px;
+
+  /* margin-bottom: 15px; */
   font-size: 18px;
 }
 
@@ -792,7 +803,7 @@ background-color: #ccc;
 }
 
 .services .description {
-  margin-left: 80px;
+  margin-left: 100px;
   line-height: 24px;
   font-size: 14px;
 }
@@ -890,13 +901,14 @@ background-color: #ccc;
   .testimonials {
     margin: 30px 10px;
   }
+  
 }
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  padding-bottom: 130px;
+  /* padding-bottom: 130px; */
 }
 
 .contact .info {
@@ -1201,6 +1213,11 @@ background-color: #ccc;
     width: auto;
     padding-right: 20px 15px;
   }
+  #starStack{
+    height: auto;
+    width: 500px;
+    border: 1px solid black;
+  }
 }
 
 /*portfolio page*/
@@ -1229,6 +1246,46 @@ button.show-all:hover {
 }
 .responsive{
   padding: 2%;
-  width: 99%;
-  height: 330px;
+  width: 98%;
+  /* height: 330px; */
+  height: auto;
+  /* margin-bottom: 20px; */
+}
+
+/* #starStack > img{
+  height: auto;
+  width: 500px;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.Staresponsive{
+  padding: 20px;
+  width: 90%;
+  height: auto;
+  border: 2px solid red;
+} */
+
+.stat .github_stat {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  width: 85%;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+.stat.heading{
+  margin-top: 200px;
+}
+
+.stat .github_stat img {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .stat .github_stat {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+  }
+
 }
